@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ffffff;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(253, 255, 253, 0.438);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 10px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #333;
+}
+
+nav a:hover {
+    background: rgba(0, 253, 34, 0.2);
+    border-color: rgb(0, 253, 34);
+    color: #ffffff;
+}
+
+main {
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #000000;
+    flex: 1;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(253, 255, 253, 0.438);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+form {
+    margin: 25px 0;
+}
+
+form p {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #979797;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    background-color: #222222;
+    color: #000000;
+    padding: 15px 30px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    background-color: rgb(0, 253, 34);
+}
+
+button:hover {
+    background-color: #626262;
+    border: 2px solid #ffffff;
+}
+.file-label:hover {
+    background-color: #626262;
+    border: 2px solid #ffffff;
+}
+
+button {
+    background-color: rgb(0, 253, 34);
+    color: #000000;
+    padding: 15px 30px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    background-color: rgb(0, 253, 34);
+}
+
+.state-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    border: 2px solid rgb(0, 253, 34);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.card-top {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card-top strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: rgb(0, 253, 34);
+}
+
+.card-top p {
+    font-size: 12px;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.card-left img {
+    max-width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.seller-name {
+    font-size: 11px;
+    color: #aaaaaa;
+    margin: 0;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 253, 34);
+}
+
+.card-right form {
+    margin: 0;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.my-state-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    border: 2px solid rgb(0, 253, 34);
+    padding: 20px;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.my-state-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.my-state-info img {
+    max-width: 140px;
+    height: 110px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.my-state-text p {
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.my-state-text strong {
+    color: rgb(0, 253, 34);
+}
+
+.my-state-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit {
+    background-color: #4444ff;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+}
+
+.btn-delete {
+    background-color: #ff4444;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+}
+
+.btn-approve {
+    background-color: rgb(0, 253, 34);
+    color: #000000;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+}
+
+.btn-reject {
+    background-color: #ff4444;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #000000;
+    border: 2px solid rgb(0, 253, 34);
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.cart-item img {
+    max-width: 140px;
+    height: 110px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.cart-info {
+    flex: 1;
+}
+
+.cart-info p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.cart-info strong {
+    color: rgb(0, 253, 34);
+}
+
+.cart-item form {
+    margin: 0;
+}
+
+.cart-item .btn-delete {
+    background-color: #ff4444;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+p[style*="color: red"] {
+    background-color: rgba(255, 68, 68, 0.2);
+    border: 2px solid #ff4444;
+    padding: 15px;
+    color: #ff6666;
+    font-weight: 600;
+    text-align: center;
+}
+
+.admin-note {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 11px;
+    color: #aaaaaa;
+}
+
+.admin-note strong {
+    color: rgb(0, 253, 34);
+}
+
+.image {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image img {
+    max-width: 350px;
+    border: 3px solid #ffffff;
+    text-shadow: 2px 2px 4px rgba(253, 255, 253, 0.438);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.pagination a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid rgb(0, 253, 34);
+    font-size: 12px;
+}
+
+.pagination a:hover,
+.pagination a.active {
+    background-color: rgb(0, 253, 34);
+    color: #000000;
+}
+
+footer {
+    background-color: #000000;
+    border-top: 2px solid rgb(0, 253, 34);
+    padding: 25px;
+    text-align: center;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.footer-contacts p {
+    margin: 8px 0;
+    font-size: 11px;
+    color: #aaaaaa;
+    text-shadow: 2px 2px 4px rgba(253, 255, 253, 0.438);
+}
+
+.footer-contacts a {
+    color: rgb(0, 253, 34);
+    text-shadow: 2px 2px 4px rgba(23, 250, 23, 0.438);
+    text-decoration: none;
+}
+
+.footer-contacts a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 9px;
+    color: #555555;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 14px;
+    }
+    
+    nav a {
+        font-size: 8px;
+        padding: 8px 10px;
+    }
+    
+    h1 {
+        font-size: 16px;
+    }
+    
+    .state-card,
+    .my-state-card,
+    .cart-item {
+        padding: 15px;
+    }
+    
+    .card-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .card-left img {
+        max-width: 100%;
+    }
+    
+    .my-state-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .my-state-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .my-state-buttons {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .cart-item img {
+        max-width: 100%;
+    }
+}
